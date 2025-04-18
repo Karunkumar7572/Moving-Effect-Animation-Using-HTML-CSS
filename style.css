@@ -1,68 +1,82 @@
-* {
-    margin: 0px;
-    padding: 0px;
+*{
+    margin:0px;
+    padding:0px;
     box-sizing: border-box;
 }
-
-body {
-    background: linear-gradient(45deg, red, blueviolet, black);
+body{
+    background-image: url('C:\\Users\\KARUNKUMAR\\Downloads\\grant-ritchie-x1w_Q78xNEY-unsplash.jpg');
+      background-repeat: no-repeat;
+     background-size: cover; 
 }
-
-.container {
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-    border: 10px solid gray;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 30px;
-}
-
-.container img {
-    height: 400px;
+.container{
+    height: 350px;
     width: 350px;
-    border-radius: 30px;
+ box-shadow: 5px 5px 15px pink;
+ background-size: cover;
+ background-position: center;
+ position: relative;
+ animation-name: movingimages;
+ animation-duration: 20s;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+}
+@keyframes movingimages{
+    0%{
+        background-image: url('C:\\Users\\KARUNKUMAR\\Desktop\\htmls\\1.jpeg');
+        top: 10px;
+        left: 0px;
+    }
+    10%{
+        background-image: url('C:\\Users\\KARUNKUMAR\\Desktop\\htmls\\2.jpeg');
+        top:10px;
+        left: 140px;
+
+    }
+    20%{
+        background-image: url('C:\\Users\\KARUNKUMAR\\Desktop\\htmls\\3.jpeg');
+        top:10px;
+        left: 280px;
+    }
+    30%{
+        background-image: url('C:\\Users\\KARUNKUMAR\\Desktop\\htmls\\4.jpeg');
+        top:10px;
+        left: 430px;
+}
+40%{
+    background-image: url('C:\\Users\\KARUNKUMAR\\Desktop\\htmls\\5.jpeg');
+    top:10px;
+    left: 700px;
+}
+50%{
+    background-image: url('C:\\Users\\KARUNKUMAR\\Desktop\\htmls\\6.jpeg');
+    top:10px;
+    left: 1200px;
+}
+60%{
+    background-image: url('C:\\Users\\KARUNKUMAR\\Desktop\\htmls\\10.jpeg');
+    top:300px;
+    left: 1200px;
+}
+70%{
+    background-image: url('C:\\Users\\KARUNKUMAR\\Desktop\\htmls\\11.jpeg');
+    top:300px;
+    left: 700px;
+}
+80%{
+    background-image: url('C:\\Users\\KARUNKUMAR\\Desktop\\htmls\\12.jpeg');
+    top:300px;
+    left: 500px;
+}
+90%{
+    background-image: url('C:\\Users\\KARUNKUMAR\\Desktop\\htmls\\13.jpeg');
+    top:300px;
+    left: 300px;
+}
+100%{
+    background-image: url('C:\\Users\\KARUNKUMAR\\Desktop\\htmls\\1.jpeg');
+    top: 10px;
+    left: 0px;
+
 }
 
-.container .anticlockwise {
-    animation: backward 5s linear 0s 1 forwards, 
-               forward 10s linear 5s 1 forwards, 
-               zoomeffect 5s linear 15s 2 forwards;
-}
-
-@keyframes backward {
-    0% {
-        transform: rotate(360deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
-@keyframes forward {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes zoomeffect {
-    0% {
-        transform: scale(1);
-    }
-    25% {
-        transform: scale(0.5);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    75% {
-        transform: scale(0.8);
-    }
-    100% {
-        transform: scale(1);
-    }
 }
